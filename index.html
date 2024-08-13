@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="public/router.svg" type="image/x-icon">
+
+</head>
+
+<body>
+    <main class="container">
+        <form id="form">
+            <label>
+                IP del usuario
+                <input required id="input" type="text" placeholder="Introduce aquí la IP">
+                <small>Por ejemplo: 54.85.132.205</small>
+            </label>
+
+            <button type="submit" id="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-wifi">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 18l.01 0" />
+                    <path d="M9.172 15.172a4 4 0 0 1 5.656 0" />
+                    <path d="M6.343 12.343a8 8 0 0 1 11.314 0" />
+                    <path d="M3.515 9.515c4.686 -4.687 12.284 -4.687 17 0" />
+                </svg>
+                Buscar información de esta IP
+            </button>
+
+        </form>
+
+        <div>
+            <pre id="results"></pre>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
